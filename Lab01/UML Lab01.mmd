@@ -1,0 +1,35 @@
+classDiagram
+direction LR
+
+class Doctor {
+  +int IdDoctor
+  +string Nombre
+  +string Especialidad
+  +bool Activo
+}
+
+class Paciente {
+  +int IdPersona_FK
+  +int IdPaciente
+  +string NumeroSeguro
+  +bool Activo
+}
+
+class Cita {
+  +int IdCita
+  +int IdDoctor_FK
+  +int IdPaciente_FK
+  +date Fecha
+  +string Estado
+}
+
+class Persona {
+  +int IdPersona
+  +string Nombre
+  +string Correo
+  +bool Activo
+}
+
+Doctor "1" --> "0..*" Cita : atiende
+Paciente "1" --> "0..*" Cita : agenda
+Persona "1" --> "0..*" Paciente : se_convierte
