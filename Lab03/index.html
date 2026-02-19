@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lab03</title>
   <link rel="stylesheet" href="estilos.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
@@ -13,7 +14,6 @@
   <header>
     <h1 id = "main-tittle" class="tittle">Plataforma Educativa</h1>
     <h2 class="tittle">Universidad Central</h2>
-  </header>
 
 
   <nav class="nav-menu" >
@@ -25,8 +25,10 @@
     </ul>
   </nav>
 
-  <main>
-    <section>
+  </header>
+
+  <main class="container">
+    <section class ="card p-4 mx-auto my-4" >
       <form action="#" method="post">
         <fieldset>
           <legend>Registro de Usuario</legend>
@@ -87,11 +89,11 @@
               </div>
           </fieldset>
 
-          <button class="submit-button" type="submit">Registrar</button>
+          <button class="btn btn-primary w-100 my-2" type="submit">Registrar</button>
         </fieldset>
       </form>
     </section>
-    <section>
+    <section id ="video-section">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/LXb3EKWsInQ?si=KRC7kR0cZzGenVSb&amp;start=61"
         title="Video Incrustado" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
