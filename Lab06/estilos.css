@@ -2,6 +2,7 @@
   --bg: #0B2D39;
   --accent: #10CFC8;
   --accent2: #EB6763;
+  --accent3: #5ec1dfe3;
   --card: #ffffff;
   --muted: #64748b;
   --border: #e5e7eb;
@@ -184,4 +185,31 @@ tbody tr:nth-child(even) {
   border: 1px solid rgba(16, 207, 200, .45);
   font-weight: 800;
   font-size: 12px;
+}
+
+table button {
+  padding: 3px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 12px;
+  transition: transform .04s ease;
+  white-space: nowrap;
+}
+.btnEliminar {
+  background: var(--accent2);
+  color: #fff;
+}
+
+.btnActualizar {
+  background: var(--accent3);
+  color: #05323A;
+}
+
+.field.buttons{
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 10px;
 }
