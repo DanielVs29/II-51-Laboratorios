@@ -1,0 +1,96 @@
+/* ===== BASE ===== */
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== TITULO ===== */
+.title {
+  font-size: 44px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+
+.mini div {
+  border: 1px solid #cfcfcf;
+  background-color: #eeeeee;
+  padding: 5px;
+  font-size: 13px;
+}
+
+.light-box {
+  background-color: #e9ecef;
+  padding: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.light-box h2 {
+  font-size: 42px;
+  margin-bottom: 5px;
+}
+
+
+.green {
+  color: #28a745;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+
+.dark-box {
+  background-color: #beb8b8;
+  padding: 25px;
+  margin-bottom: 15px;
+}
+
+.dark-box h2 {
+  font-size: 42px;
+}
+
+
+.info-text {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.blue-row {
+  margin-bottom: 3px;
+}
+
+.box-blue {
+  background-color: #88bdf1; 
+  border: 2px solid black;   
+  padding: 10px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.empty {
+  background: transparent;
+  border: none;
+}
+
+
+.form-label {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.form-control {
+  height: 36px;
+  font-size: 14px;
+}
+
+.form-text {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.btn {
+  padding: 6px 16px;
+  font-size: 14px;
+}
