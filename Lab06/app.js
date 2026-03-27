@@ -1,8 +1,6 @@
 import { supabase } from "./supabase.js";
 
-// ****************************************
-// REFERENCIAS DOM
-// ****************************************
+
 const txtId = document.getElementById("txtId");
 const txtNombre = document.getElementById("txtNombre");
 const txtApellido = document.getElementById("txtApellido");
@@ -19,9 +17,6 @@ const txtSearch = document.getElementById("txtSearch");
 const tbody = document.getElementById("tbodyStudents");
 const tituloForm = document.getElementById("tituloForm");
 
-// ****************************************
-// FUNCIONES (PRIMERO 🔥)
-// ****************************************
 
 const consultarEstudiantes = async () => {
   let query = supabase
@@ -137,10 +132,6 @@ const limpiarFormulario = () => {
   tituloForm.textContent = "Agregar Estudiantes";
 };
 
-// ****************************************
-// EVENTOS (DESPUÉS ⚡)
-// ****************************************
-
 window.onload = () => consultarEstudiantes();
 
 btnLoad.addEventListener("click", consultarEstudiantes);
@@ -154,7 +145,7 @@ btnClear.addEventListener("click", async () => {
   Swal.fire("Filtro limpiado", "", "info");
 });
 
-// Delegación eventos tabla
+
 tbody.addEventListener("click", async (e) => {
   const id = e.target.getAttribute("data-id");
 
