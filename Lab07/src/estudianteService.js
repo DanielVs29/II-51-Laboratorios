@@ -47,7 +47,7 @@ const mapEstudiantePayload = (estudiante) => ({
   apellido: estudiante.apellido?.trim() || "",
   correo: estudiante.correo?.trim() || "",
   carrera: estudiante.carrera?.trim() || "",
-  fechaNac: estudiante.fechaNac || null,
+  fechaNacimiento: estudiante.fechaNacimiento || null,
 });
 
 
