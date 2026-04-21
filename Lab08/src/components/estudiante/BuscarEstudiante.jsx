@@ -4,8 +4,13 @@ function BuscarEstudiante({ search, setSearch, handleSearch, handleClearSearch }
       <div style={{ display: "flex", gap: "10px", marginBottom: "20px" }}>
         <input type="text" placeholder="Buscar por nombre o apellido" value={search} onChange={(e) => setSearch(e.target.value)} />
 
-        <button onClick={handleSearch}>Buscar</button>
-        <button onClick={handleClearSearch}>Limpiar</button>
+        <button className="btn btn-search" onClick={handleSearch}>
+          Buscar
+        </button>
+        
+        <button className="btn btn-clear" onClick={handleClearSearch}>
+          Limpiar
+        </button>
       </div>
     </>
   );
