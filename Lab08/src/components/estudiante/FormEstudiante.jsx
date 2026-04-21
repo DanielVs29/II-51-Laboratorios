@@ -68,9 +68,12 @@ function FormEstudiante({ form, setForm, loadStudents, initialForm }) {
         <Input type="date" name="fechaNac" value={form.fechaNac} onChange={handleChange} />
       </div>
 
-      <div style={{ display: "flex", gap: "10px", marginBottom: "20px" }}>
-        <button type="submit">{form.id ? "Actualizar" : "Agregar"}</button>
-        <button type="button" onClick={handleCancel}>
+      <div className="container-actions">
+        <button type="submit" className="btn btn-primary">
+        {form.id ? "Actualizar" : "Agregar"}
+        </button>
+
+        <button type="button" className="btn btn-secondary" onClick={handleCancel}>
           Cancelar
         </button>
       </div>
