@@ -31,7 +31,7 @@ const initialForm = {
   apellido: "",
   correo: "",
   carrera: "",
-  fechaNacimiento: "",
+  fechaNac: "",
 };
 
 function App() {
@@ -139,7 +139,7 @@ function App() {
       apellido: student.apellido || "",
       correo: student.correo || "",
       carrera: student.carrera || "",
-      fechaNacimiento: student.fechaNacimiento || "",
+      fechaNac: student.fechaNac || "",
     });
   };
 
@@ -238,8 +238,8 @@ function App() {
 
           <input
             type="date"
-            name="fechaNacimiento"
-            value={form.fechaNacimiento}
+            name="fechaNac"
+            value={form.fechaNac}
             onChange={handleChange}
           />
         </div>
@@ -300,7 +300,7 @@ function App() {
                   <td>{student.apellido}</td>
                   <td>{student.correo}</td>
                   <td>{student.carrera}</td>
-                  <td>{student.fechaNacimiento || ""}</td>
+                  <td>{student.fechaNac || ""}</td>
                   <td>
                     <button onClick={() => handleEdit(student)}>Editar</button>{" "}
                     <button onClick={() => handleDelete(student.id)}>

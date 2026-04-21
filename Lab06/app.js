@@ -21,7 +21,7 @@ const tituloForm = document.getElementById("tituloForm");
 const consultarEstudiantes = async () => {
   let query = supabase
     .from("estudiantes")
-    .select("id,nombre,apellido,correo,carrera,fechaNacimiento");
+    .select("id,nombre,apellido,correo,carrera,fechaNac");
 
   if (txtSearch.value.trim()) {
     query = query.or(
@@ -46,8 +46,8 @@ const consultarEstudiantes = async () => {
       <td>${r.correo ?? ""}</td>
       <td>${r.carrera ?? ""}</td>
       <td>${
-        r.fechaNacimiento
-          ? new Date(r.fechaNacimiento).toLocaleDateString()
+        r.fechaNac
+          ? new Date(r.fechaNac).toLocaleDateString()
           : ""
       }</td>
       <td>
@@ -66,7 +66,7 @@ const guardarEstudiante = async () => {
     apellido: txtApellido.value.trim(),
     correo: txtCorreo.value.trim(),
     carrera: txtCarrera.value.trim(),
-    fechaNacimiento: txtFechaNac.value
+    fechaNac: txtFechaNac.value
   };
 
   if (!estudiante.nombre || !estudiante.apellido) {
@@ -169,7 +169,7 @@ tbody.addEventListener("click", async (e) => {
     txtApellido.value = data.apellido;
     txtCorreo.value = data.correo;
     txtCarrera.value = data.carrera;
-    txtFechaNac.value = data.fechaNacimiento;
+    txtFechaNac.value = data.fechaNac;
 
     btnAdd.textContent = "Actualizar";
     tituloForm.textContent = "Editar Estudiante";
